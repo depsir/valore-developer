@@ -27,14 +27,14 @@
     <div class="slides">
         <section class="title-slide"> <div>Sono uno sviluppatore e genero valore</div> </section>
         <section class="half-image">
-        
+            <img src="https://www.intre.it/wp-content/uploads/2018/11/Sacchi.jpg" /> 
             <div>
                 <h2>Chi sono</h2>
                 <ul>
-                    <li>3 anni dev intre</li>
-                    <li>7 anni dev</li>
-                    <li>una vita code</li>
-                    <li>e mi pagano</li>
+                    <li>3 anni dev @ intre</li>
+                    <li>7 anni dev per lavoro</li>
+                    <li>da sempre dev</li>
+                    <li class="fragment">ho trovato chi mi paga per farlo!</li>
                 </ul>
             </div>
         </section>
@@ -65,25 +65,41 @@
     </section>
 <section class="title-slide bam"><div>Il modo più veloce di fare una cosa è non farla</div></section>
 <section class="title-slide bam"><div>1. Automatizzare quel che posso</div></section>
+<section>
 <section class="title-slide bam"><div><h2>Codice</h2><ul><li>Snippet</li><li>Refactoring</li><li>Generazione di codice</li></ul></div></section> 
+<section class="title-slide bam img-slide"><img src="images/ide-code-generation.gif" /></section>
+</section>
 <section class="title-slide bam"><div><h2>Build e deploy</h2><ul><li>Gitlab pipelines</li><li>Tfs</li><li>Jenkins</li><li>Travis</li></ul></div></section> 
-<section class="title-slide bam"><div><h2>Pulizia codice</h2><ul><li>Eslint</li><li>Tslint</li><li>prettier</li></ul></div></section> 
+<section class="title-slide bam"><div><h2>Pulizia codice</h2><ul><li>Eslint</li><li>Tslint</li><li>Prettier</li><li>Ide</li></ul></div></section> 
 <section class="title-slide bam"><div><h2>Code review</h2><ul><li>Sonarqube</li></ul></div></section> 
-<section class="title-slide bam"><div><h2>Documentazione</h2><ul><li>Javadoc</li><li>Swagger/Swashbuckle</li><li>styleguidist</li><li>Script di setup</li></ul></div></section> 
+<section class="title-slide bam"><div><h2>Documentazione</h2><ul><li>Javadoc</li><li>Swagger/Swashbuckle</li><li>Styleguidist</li><li>Script di setup</li></ul></div></section> 
 <section class="title-slide bam"><div><h2>Changelog</h2><ul><li>Backlog api</li><li>Git log</li></ul></div></section> 
 <section class="title-slide bam"><div><h2>Notifiche e interazioni repo</h2><ul><li>Hook nuova build/release</li><li>Creazione automatica branch</li><li>Chiusura automatica task</li></ul></div></section> 
 
         <section class="title-slide bam"><img src="images/scripts.jpg" style="width:100%;"/></section>
+<section>
 <section class="title-slide bam"><div><h2>Scripts</h2><ul><li>Integrazione con build system (e.g. npm)</li><li>Husky</li></ul></div></section> 
+<section class="title-slide bam"><pre>  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged 
+        --pattern \"src/**/*.{ts,tsx}\""
+    }
+  },
+ </pre></section>
+
+        <section class="title-slide bam"><img src="images/is_it_worth_the_time_2x.png" style="width:100%;"/></section>
+</section>
 <section class="title-slide bam"><div>2. Early feedback</div></section>
 <section class="title-slide bam"><div><h2>Storie completate</h2><ul><li>Screenshot/video</li><li>Ambiente di nightly</li></ul></div></section> 
 <section class="title-slide bam"><div><h2>Storie da iniziare</h2><ul><li>Punti critici</li><li>Possibilità di split</li></ul></div></section> 
-<section class="title-slide bam"><div><h2>Codice</h2><ul><li>Continuous integration</li><li>Pair programming</li><li>TDD</li><li>styleguidist</li><li>linter</li><li>Watch con build e test</li></ul></div></section> 
+<section class="title-slide bam"><div><h2>Codice</h2><ul><li>Continuous integration</li><li>Pair programming</li><li>TDD</li><li>Styleguidist</li><li>Linter</li><li>Watch con build e test</li></ul></div></section> 
 
 <section class="title-slide bam"><div>3. Fermati a pensare</div></section>
         <section class="title-slide bam img-slide"><img src="images/technicaldebt.jpg" style="width:100%;"/></section>
-<section class="title-slide bam"><div>The vim way</div></section>
+<section>
 <section class="title-slide bam"><div>Il modo migliore per migliorare è [voler] migliorare</div></section>
+<section class="title-slide bam"><div>The vim way</div></section>
+</section>
 <section class="title-slide bam"><div><ul><li>Retrospettiva: sei contento di come hai usato il tuo tempo? Quella riunione era proprio necessaria?</li><li>Refinement: quella funzionalità è proprio necessaria? È tutta necessaria?</li></ul></div></section> 
 <section class="title-slide bam"><div><ul><li>Scelte tecnologiche: quel codice è proprio necessario? Posso usare invece una libreria, framework, servizio/piattaforma?</li><li>RTFM</li><li>Colleghi, conferenze, networking</li></ul></div></section> 
         <section class="title-slide"> <div>Sono uno sviluppatore e genero PIÙ valore</div> </section>

@@ -116,11 +116,11 @@ content:' -'
     box-shadow: 0 0 0;
 }
 
-.half-image {
+.half-image > div:not(.foot) {
     display: flex;
 }
 
-.half-image > img {
+.half-image > div > img {
     width:100%;
     object-fit: contain;
     flex: 1;
@@ -128,6 +128,6 @@ content:' -'
     min-height: 0;
     align-self: center;
 }
-.half-image > div {
+.half-image > div > div {
     flex: 1;
 }
